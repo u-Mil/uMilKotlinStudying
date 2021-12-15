@@ -1,0 +1,42 @@
+val : 불변
+var : 가변
+-----------------------------------------
+java 방식으로 class 정의 . .
+constructor(매개변수)
+this.변수 = 매개변수 ..
+
+kotlin 방식으로 class 정의
+- primary constructor
+매개변수로 첫 초기화 . .
+- secondary constructor
+class{ 이후에 정의하는 모든 constructor
+
+init {} - secondary constructor 정의한 경우 가장먼저 호출
+
+-----------------------------------------
+
+Generic
+캐스팅이 자주 일어나면 프로그램의 속도저하가 일어남
+Type의 T를 사용하는 것이 관례 .. 다음 U,V ..
+
+-----------------------------------------
+
+A..B - A.rangeTo(B)
+
+in T - ?extends T
+서브클래스를 슈퍼클래스 타입에..
+out T - ?super T
+슈퍼클래스를 서브클래스 타입에..
+
+Iterator 원소를 하나씩 반복적으로 꺼내기 위한 인터페이스
+interface Iterator<out T>
+{
+    operator fun next(): T
+    operator fun hasNext(): Boolean
+}
+
+
+싱글턴 패턴
+https://webdevtechblog.com/%EC%8B%B1%EA%B8%80%ED%84%B4-%ED%8C%A8%ED%84%B4-singleton-pattern-db75ed29c36
+
+
